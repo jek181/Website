@@ -3,45 +3,68 @@
 
     padding: 0px;
 
-    font-family: Century;
+  font-family: "Roboto Condensed", sans-serif;
 
 }
 
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../b2.jpg);
-    height: 100vh;
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.5),#a65412),url(../b2.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 100px;
+    height: 100vh;
 }
 
-ul{
-    float: right;
-    list-style-type: none;
-    margin-top: 30px;
-    min-height: 400px;
-    margin-right: 60px;
-    font-size: 17px;
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
 }
 
-ul li{
-    display: inline-block;
+.banner-text h1{
+    font-size: 130px;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
-ul li a{
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #a65412;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a{
     text-decoration: none;
     color: #fff;
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.5 ease;
 }
 
-ul li a:hover{
-    background-color: #fff;
-    color: #000;
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background: #a65412;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
 }
 
-ul li.active a{
-    background-color: #fff;
-    color: #000;
+#menuBtn img{
+    width: 20px;
+    margin-top: 15px;
 }

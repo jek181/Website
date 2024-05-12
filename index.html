@@ -3,17 +3,49 @@
 <head> 
     <title>Jennifer Kish</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="main">
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Resume</a></li>
-            </ul>
-        </div>
-    </header>
+<section id="banner">
+    <div class="banner-text">
+        <h1>Jennifer Kish</h1>
+        <p>Computer Engineering</p>
+    </div>
+</section>
+
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div id="menuBtn">
+    <img src="../menu.png" id="menu">
+</div>
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu") 
+
+    sideNav.style.right = "-250px";
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src = "../close.png";
+        }
+        else{
+            sideNav.style.right = "-250px";
+            menu.src = "../menu.png";
+        }
+    }
+</script>
+
 </body>
 </html>
